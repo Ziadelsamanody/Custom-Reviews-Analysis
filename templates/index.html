@@ -1,0 +1,20 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Review Classifier</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Review Classifier</h2>
+        <form action="/predict" method="post">
+            <div class="mb-3">
+                <label for="text" class="form-label">Enter your review:</label>
+                <textarea class="form-control" name="text" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Classify</button>
+        </form>
+    </div>
+</body>
+</html>
